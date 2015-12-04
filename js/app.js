@@ -8,6 +8,11 @@ if (window.Touch) {
     return $(this).trigger('click');
   });
 }
+$(document).bind('mobileinit',function(){
+        $.mobile.changePage.defaults.changeHash = false;
+        $.mobile.hashListeningEnabled = false;
+        $.mobile.pushStateEnabled = false;
+    });
 
 // Model
 // Anything related to data querying and manipulation

@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta content='width=device-width, minimum-scale=1, maximum-scale=1' name='viewport'>
     <title>MCalc</title>
-    <link href='vendors/jquery.mobile-1.3.2.css' rel='stylesheet'>
+    <link href='vendors/jquery.mobile-1.4.5.min.css' rel='stylesheet'>
     <link href='css/app.css' rel='stylesheet'>
   </head>
   <body>
@@ -14,7 +14,7 @@
         <a class='ui-btn-right' data-role='button' data-transition='slide' href='#about'>About</a>
       </div>
       <div data-role='content'>
-        <a class='ui-btn-right' data-role='button' data-transition='slide' href='#homeCalc'>樓宇按揭</a>
+        <a class='' data-role='button' data-transition='slide' href='#homeCalc'>樓宇按揭</a>
       </div>
     </div>
     <div data-role='page' id='about'>
@@ -36,39 +36,33 @@
         <ul data-role='listview' data-inset='true' id='calclist' class='homeCalc'>
           <li class='listRow'>
             <div data-role='fieldcontain'>
-              <fieldset class="ui-grid-a">
-                <div class="ui-block-a">
-                  <label for='priceValue' class='fieldName'>樓價</label>
-                </div>
-                <div class="ui-block-b">
-                  <input type='text' data-mini='true'  class='fieldValue' id='priceValue' placeholder='樓宇價值' value='300'>
-                  <label  class='fieldUnit'>萬</label>
-                </div>
-              </fieldset>
+              <label for='priceValue' class='fieldName'>樓價</label>
+              <input type='text' data-mini='true'  class='fieldValue' id='priceValue' placeholder='樓宇價值' value='300'>
+              <label  class='fieldUnit'>萬</label>
             </div>
           </li>
-          <li class=''>
+          <li class='listRow'>
             <div data-role='fieldcontain'>
               <label for='loanRatio' class='fieldName'>按揭成數</label>
               <input type='text' data-mini='true' class='fieldValue' id='loanRatio' placeholder='按揭成數' value ='70'>
               <label class='fieldUnit'>%</label>
             </div>  
           </li>
-          <li class=''>
+          <li class='listRow'>
             <div data-role='fieldcontain'>
               <label for='loanPeriod' class='fieldName'>按揭年期</label>
               <input type='text' data-mini='true' class='fieldValue' id='loanPeriod' placeholder='按揭年期' value = '20'>
               <label class='fieldUnit'>年</label>
             </div>
           </li>
-          <li class=''>
+          <li class='listRow'>
             <div data-role='fieldcontain'>
               <label for='interestRate' class='fieldName'>息率</label>
               <input type='text' data-mini='true' class='fieldValue' id='interestRate' placeholder='息率' value = '2.5'>
               <label class='fieldUnit'>%</label>
             </div>
           </li>
-          <li class=''>
+          <li class='listRow'>
             <div data-role='fieldcontain'>
               <label for='firtBuy' class='fieldName'>首次置業</label>
                 <select id="firtBuy" data-role="slider">
@@ -91,7 +85,7 @@
       </div>
       <div data-role='content'>
         <ul data-role='listview' data-inset='true' id='calcResult' class='homeCalc'>
-          <li class=''>
+          <li class='listRow'>
             <div data-role='fieldcontain'>
               <label for='firstPay' class='fieldName'>首期</label>
               <input type='text' data-mini='true' class='fieldValue' id='firstPay' placeholder='首期'>
@@ -99,28 +93,28 @@
             </div>
           </li>
 
-          <li class=''>
+          <li class='listRow'>
             <div data-role='fieldcontain'>
               <label for='cartorioFees' class='fieldName'>公證費用</label>
               <input type='text' data-mini='true' class='fieldValue' id='cartorioFees' placeholder='公證費用'>
               <label  class='fieldUnit'>元</label>
             </div>
           </li>
-          <li class=''>
+          <li class='listRow'>
             <div data-role='fieldcontain'>
               <label for='TaxFees' class='fieldName'>印花稅</label>
               <input type='text' data-mini='true' class='fieldValue' id='TaxFees' placeholder='印花稅'>
               <label  class='fieldUnit'>萬</label>
             </div>
           </li>
-          <li class=''>
+          <li class='listRow'>
             <div data-role='fieldcontain'>
               <label for='registrationFees' class='fieldName'>登記費</label>
               <input type='text' data-mini='true' class='fieldValue' id='registrationFees' placeholder='登記費'>
               <label  class='fieldUnit'>萬</label>
             </div>
           </li>
-          <li class=''>
+          <li class='listRow'>
             <div data-role='fieldcontain'>
               <label for='totalFees' class='fieldName'>合計費用</label>
               <input type='text' data-mini='true' class='fieldValue' id='totalFees' placeholder='合計費用'>
@@ -128,21 +122,21 @@
             </div>
           </li>
 
-          <li class=''>
+          <li class='listRow'>
             <div data-role='fieldcontain'>
               <label for='loanValue' class='fieldName'>貸款金額</label>
               <input type='text' data-mini='true' class='fieldValue' id='loanValue' placeholder='按揭成數'>
               <label  class='fieldUnit'>萬</label>
             </div>  
           </li>
-          <li class=''>
+          <li class='listRow'>
             <div data-role='fieldcontain'>
               <label for='monthOffer' class='fieldName'>每月供款</label>
               <input type='text' data-mini='true' class='fieldValue' id='monthOffer' placeholder='每月供款'>
               <label  class='fieldUnit'>元</label>
             </div>
           </li>
-          <li class=''>
+          <li class='listRow'>
             <div data-role='fieldcontain'>
               <label for='totalInterrest' class='fieldName'>利息總額</label>
               <input type='text' data-mini='true' class='fieldValue' id='totalInterrest' placeholder='總利息'>
@@ -154,7 +148,12 @@
     </div>
 
     <script src='vendors/jquery-2.0.3.js'></script>
-    <script src='vendors/jquery.mobile-1.3.2.js'></script>
+    <script>
+    $(document).bind('mobileinit',function(){
+        $.mobile.pushStateEnabled = false;
+    });
+</script>
+    <script src='vendors/jquery.mobile-1.4.5.min.js'></script>
     <script src='js/app.js'></script>
   </body>
 </html>
