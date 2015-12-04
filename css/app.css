@@ -1,0 +1,11 @@
+.homeCalc label.fieldName {
+	width: 40%!important;
+}
+
+.homeCalc div.ui-input-text{
+	width: 50%;
+}
+
+.homeCalc label.fieldUnit{
+	width: 10%;
+}
