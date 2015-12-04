@@ -9,12 +9,14 @@
 
 .homeItem{
 	height: 70px;
-	border:#76EEC6 5px solid; 
+	border:#66CDAA 5px solid; 
+	border-radius: 15px;
 	text-align: center;
 	margin-bottom: 10px;
 	padding-top: 20px;
-	color: black;
+	color: #66CDAA;
 	font-size: 2em;
+
 }
 
 .listRow label.fieldName {
@@ -38,9 +40,13 @@
 
 .actionBtn{
 }
+
+a {
+    text-decoration: none;
+}
 /*******overrite***/
 .ui-header{
-	background-color: #76EEC6 !important;8*
+	background-color: #3CB371 !important;
 }
 .ui-title{
 	color: white !important;
