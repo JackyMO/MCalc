@@ -9,7 +9,7 @@
   </head>
   <body>
     <div data-role='page' id='root'>
-      <div data-role='header'>
+      <div data-role='header' class='homeHeader'>
         <h1>MCalc</h1>
         <a class='ui-btn-right' data-role='button' data-transition='slide' href='#about'>About</a>
       </div>
@@ -73,8 +73,10 @@
           </li>
 
         </ul>
-        <a href='#gaming' id='calculate-btn' data-role='button' >計算</a>
-        <a href='#gaming' id='reset-btn' data-role='button' data-transition='none'>清空</a>
+        <div>
+        <a class='actionBtn' id='calculate-btn' data-role='button' >計算</a>
+        <a class='actionBtn' id='reset-btn' data-role='button' data-transition='none'>清空</a>
+      </div>
       </div>
     </div>
 
