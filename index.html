@@ -17,10 +17,10 @@
         <a class='' data-transition='slide' href='#homeCalc'>
           <div class='homeItem'>樓宇按揭</div>
         </a>
-        <a class='' data-transition='slide' href='#homeCalc'>
+        <a class='' data-transition='slide' href='#taxCalc'>
           <div class='homeItem'>職業稅</div>
         </a>
-        <a class='' data-transition='slide' href='#homeCalc'>
+        <a class='' data-transition='slide' href='#waterCalc'>
           <div class='homeItem'>水費計算</div>
         </a>
       </div>
@@ -95,14 +95,7 @@
       </div>
       <div data-role='content'>
         <ul data-role='listview' data-inset='true' id='calcResult' class='homeCalc'>
-          <li class='listRow'>
-            <div data-role='fieldcontain'>
-              <label for='firstPay' class='fieldName'>首期</label>
-              <input type='text' data-mini='true' class='fieldValue' id='firstPay' placeholder='首期'>
-              <label  class='fieldUnit'>萬</label>
-            </div>
-          </li>
-
+          
           <li class='listRow'>
             <div data-role='fieldcontain'>
               <label for='cartorioFees' class='fieldName'>公證費用</label>
@@ -114,24 +107,31 @@
             <div data-role='fieldcontain'>
               <label for='TaxFees' class='fieldName'>印花稅</label>
               <input type='text' data-mini='true' class='fieldValue' id='TaxFees' placeholder='印花稅'>
-              <label  class='fieldUnit'>萬</label>
+              <label  class='fieldUnit'>元</label>
             </div>
           </li>
           <li class='listRow'>
             <div data-role='fieldcontain'>
               <label for='registrationFees' class='fieldName'>登記費</label>
               <input type='text' data-mini='true' class='fieldValue' id='registrationFees' placeholder='登記費'>
+              <label  class='fieldUnit'>元</label>
+            </div>
+          </li>
+
+          <li class='listRow'>
+            <div data-role='fieldcontain'>
+              <label for='firstPay' class='fieldName'>首期</label>
+              <input type='text' data-mini='true' class='fieldValue' id='firstPay' placeholder='首期'>
               <label  class='fieldUnit'>萬</label>
             </div>
           </li>
           <li class='listRow'>
             <div data-role='fieldcontain'>
-              <label for='totalFees' class='fieldName'>合計費用</label>
+              <label for='totalFees' class='fieldName'>首期＋費用</label>
               <input type='text' data-mini='true' class='fieldValue' id='totalFees' placeholder='合計費用'>
               <label  class='fieldUnit'>元</label>
             </div>
           </li>
-
           <li class='listRow'>
             <div data-role='fieldcontain'>
               <label for='loanValue' class='fieldName'>貸款金額</label>
@@ -154,6 +154,26 @@
             </div>
           </li>
         </ul>
+      </div>
+    </div>
+
+    <div data-role='page' id='taxCalc'>
+      <div data-role='header'>
+        <h2>職業稅</h2>
+        <a data-icon='arrow-l' data-rel='back'>Home</a>
+      </div>
+      <div data-role='content'>
+        <p>Coming soon.</p>
+      </div>
+    </div>
+
+    <div data-role='page' id='waterCalc'>
+      <div data-role='header'>
+        <h2>水費計算</h2>
+        <a data-icon='arrow-l' data-rel='back'>Home</a>
+      </div>
+      <div data-role='content'>
+        <p>Coming soon.</p>
       </div>
     </div>
 

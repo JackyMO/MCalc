@@ -12,6 +12,7 @@
 	border:#66CDAA 5px solid; 
 	border-radius: 15px;
 	text-align: center;
+	margin-top: 10px;
 	margin-bottom: 10px;
 	padding-top: 20px;
 	color: #66CDAA;
@@ -57,6 +58,15 @@ a {
 	padding-bottom: 0px;
 }
 
+.ui-content{
+	padding-top: 0px;
+}
+
 .ui-mobile label, .ui-controlgroup-label{
 	margin: .4em 0 .4em;
+}
+
+.ui-page-theme-a .ui-btn.ui-btn-active, html .ui-bar-a .ui-btn.ui-btn-active, html .ui-body-a .ui-btn.ui-btn-active, html body .ui-group-theme-a .ui-btn.ui-btn-active, html head+body .ui-btn.ui-btn-a.ui-btn-active, .ui-page-theme-a .ui-checkbox-on:after, html .ui-bar-a .ui-checkbox-on:after, html .ui-body-a .ui-checkbox-on:after, html body .ui-group-theme-a .ui-checkbox-on:after, .ui-btn.ui-checkbox-on.ui-btn-a:after, .ui-page-theme-a .ui-flipswitch-active, html .ui-bar-a .ui-flipswitch-active, html .ui-body-a .ui-flipswitch-active, html body .ui-group-theme-a .ui-flipswitch-active, html body .ui-flipswitch.ui-bar-a.ui-flipswitch-active, .ui-page-theme-a .ui-slider-track .ui-btn-active, html .ui-bar-a .ui-slider-track .ui-btn-active, html .ui-body-a .ui-slider-track .ui-btn-active, html body .ui-group-theme-a .ui-slider-track .ui-btn-active, html body div.ui-slider-track.ui-body-a .ui-btn-active {
+	border-color: #66CDAA;
+	background-color: #66CDAA;
 }
