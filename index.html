@@ -34,11 +34,17 @@
       </div>
       <div data-role='content'>
         <ul data-role='listview' data-inset='true' id='calclist' class='homeCalc'>
-          <li class=''>
+          <li class='listRow'>
             <div data-role='fieldcontain'>
-              <label for='priceValue' class='fieldName'>樓價</label>
-              <input type='text' data-mini='true'  class='fieldValue' id='priceValue' placeholder='樓宇價值' value='300'>
-              <label  class='fieldUnit'>萬</label>
+              <fieldset class="ui-grid-a">
+                <div class="ui-block-a">
+                  <label for='priceValue' class='fieldName'>樓價</label>
+                </div>
+                <div class="ui-block-b">
+                  <input type='text' data-mini='true'  class='fieldValue' id='priceValue' placeholder='樓宇價值' value='300'>
+                  <label  class='fieldUnit'>萬</label>
+                </div>
+              </fieldset>
             </div>
           </li>
           <li class=''>
