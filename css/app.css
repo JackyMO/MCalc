@@ -14,8 +14,16 @@
 	width: 10%;
 }
 
+.listRow div.ui-input-text input{
+	text-align: right;
+}
 /*******overrite***/
 
 .ui-listview>.ui-li-static{
 	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.ui-mobile label, .ui-controlgroup-label{
+	margin: .4em 0 .4em;
 }
